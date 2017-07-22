@@ -1,5 +1,6 @@
 import re
 
+
 class MyClass(object):
     foo = 1
 
