@@ -11,15 +11,23 @@ class AbstractSample(object):
     # or an error will be thrown
     @abc.abstractmethod
     def get(self):
-        return
+        print('Yayya')
 
+    # the actual functionality of abstract methods is ignored by Python
+    # i.e. the abstract methods don't do anything
+    # they just need to implemented somehow in child classes
     @abc.abstractmethod
-    def set(self):
-        return
+    def set(self, bar):
+        return bar + 1
 
     # this method is not required
     def foo(self):
         return
+
+
+# Abstract class cannot be instantiated, it only serves as a parent class
+# z = AbstractSample()
+# TypeError: Can't instantiate abstract class AbstractSample with abstract methods get, set
 
 
 class MyBrokenClass(AbstractSample):
