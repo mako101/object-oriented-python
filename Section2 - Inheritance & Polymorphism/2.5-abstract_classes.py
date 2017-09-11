@@ -3,7 +3,7 @@ import abc
 
 class AbstractSample(object):
 
-    # the magic attribute that sets this calss to be an abstract class
+    # the magic attribute that sets this class to be an abstract class
     __metaclass__ = abc.ABCMeta
 
     # this means the child classes
